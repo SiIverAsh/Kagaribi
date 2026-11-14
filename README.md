@@ -1,6 +1,6 @@
-# 🔥 Kagaribi（篝火）
+# 🔥 Kagaribi
 
-> 篝火即烽燧，一站一堆火，远远一看就知道哪条线还通着。
+
 
 **Kagaribi** 是独立于播放器的番剧采集源健康度验证探针，自动检测 [Predidit/KazumiRules](https://github.com/Predidit/KazumiRules) 规则存活性（兼容旧式 `api 1-8` XPath 规则与新式 `api 8-9` JSON API 规则），每 6 小时自动输出 `report.json` 与 Markdown 健康度榜单。
 
