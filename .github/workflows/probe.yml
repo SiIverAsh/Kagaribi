@@ -1,0 +1,100 @@
+name: Source Health Probe
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      deep:
+        description: "Enable L4 Playwright deep stream check (--deep)"
+        required: false
+        default: false
+        type: boolean
+  push:
+    branches:
+      - main
+  pull_request:
+
+concurrency:
+  group: kagaribi-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: Unit Tests (Mocked)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Sync dependencies
+        run: uv sync --frozen
+
+      - name: Run pytest
+        run: uv run pytest -v
+
+  probe:
+    name: Probe KazumiRules & Publish Leaderboard
+    needs: test
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'push' && github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+          enable-cache: true
+
+      - name: Sync dependencies
+        run: |
+          if [ "${{ inputs.deep }}" = "true" ]; then
+            uv sync --frozen --extra deep
+            uv run playwright install --with-deps chromium
+          else
+            uv sync --frozen
+          fi
+
+      - name: Clone Predidit/KazumiRules
+        run: git clone --depth 1 https://github.com/Predidit/KazumiRules /tmp/kazumi-rules
+
+      - name: Run Kagaribi probe
+        run: |
+          mkdir -p dist_pages
+          DEEP_FLAG=""
+          if [ "${{ inputs.deep }}" = "true" ]; then
+            DEEP_FLAG="--deep"
+          fi
+          uv run kagaribi probe \
+            --rules /tmp/kazumi-rules \
+            --out dist_pages/report.json \
+            --md dist_pages/report.md \
+            $DEEP_FLAG
+          cp dist_pages/report.md dist_pages/README.md
+          cp dist_pages/report.md dist_pages/index.md
+          cat dist_pages/report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Publish report to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd dist_pages
+          touch .nojekyll
+          git init -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .nojekyll report.json report.md README.md index.md
+          git commit -m "chore(report): update source health leaderboard ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages:gh-pages
