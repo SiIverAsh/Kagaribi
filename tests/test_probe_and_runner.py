@@ -3,11 +3,14 @@
 from __future__ import annotations
 
 import asyncio
+import sys
+import types
 
 import httpx
+import pytest
 import respx
 
-from kagaribi.probe import RequestLimiter, probe_source
+from kagaribi.probe import ProbeResult, RequestLimiter, probe_l4_playable, probe_source
 from kagaribi.runner import run_probes
 from kagaribi.schema import KazumiRule
 
@@ -458,4 +461,114 @@ async def test_xpath_post_search_and_dot_result_and_root_roads() -> None:
     assert report.l2.evidence["first_name"] == "海贼王 特别篇"
     assert report.l3.evidence["road_count"] == 1
     assert report.l3.evidence["episode_count"] == 1
+
+
+async def test_l4_playable_skips_when_playwright_missing(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setitem(sys.modules, "playwright", None)
+    monkeypatch.setitem(sys.modules, "playwright.async_api", None)
+
+    rule = _make_api5_rule()
+    l3_ok = ProbeResult(
+        status="passed",
+        latency_ms=20.0,
+        reason="ok",
+        evidence={"first_episode_url": "https://xpath-anime.test/play/101-1"},
+    )
+    res = await probe_l4_playable(rule, l3_ok, deep=True)
+    assert res.status == "skipped"
+    assert res.reason == "playwright_not_installed"
+
+
+async def test_l4_playable_intercepts_stream_and_ignores_wrapper_query(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    continued_urls: list[str] = []
+    aborted_urls: list[str] = []
+
+    class FakeRequest:
+        def __init__(self, url: str, resource_type: str = "xhr") -> None:
+            self.url = url
+            self.resource_type = resource_type
+
+    class FakeRoute:
+        def __init__(self, req: FakeRequest) -> None:
+            self.request = req
+
+        async def continue_(self) -> None:
+            continued_urls.append(self.request.url)
+
+        async def abort(self) -> None:
+            aborted_urls.append(self.request.url)
+
+    class FakePage:
+        def __init__(self) -> None:
+            self._handler = None
+
+        async def route(self, _pattern: str, handler: object) -> None:
+            self._handler = handler
+
+        async def goto(self, _url: str, **_kwargs: object) -> None:
+            assert callable(self._handler)
+            await self._handler(
+                FakeRoute(
+                    FakeRequest(
+                        "https://player.mock.test/dplayer.php?url=https://cdn.mock.test/ep1.m3u8",
+                        "document",
+                    )
+                )
+            )
+            await self._handler(
+                FakeRoute(
+                    FakeRequest("https://cdn.mock.test/hls/ep1/index.m3u8?sign=xyz", "xhr")
+                )
+            )
+
+    class FakeContext:
+        async def new_page(self) -> FakePage:
+            return FakePage()
+
+    class FakeBrowser:
+        async def new_context(self, **_kwargs: object) -> FakeContext:
+            return FakeContext()
+
+        async def close(self) -> None:
+            return None
+
+    class FakeChromium:
+        async def launch(self, **_kwargs: object) -> FakeBrowser:
+            return FakeBrowser()
+
+    class FakePlaywrightCM:
+        async def __aenter__(self) -> object:
+            return type("PW", (), {"chromium": FakeChromium()})()
+
+        async def __aexit__(self, *_args: object) -> None:
+            return None
+
+    fake_pw_pkg = types.ModuleType("playwright")
+    fake_pw_async = types.ModuleType("playwright.async_api")
+    fake_pw_async.async_playwright = lambda: FakePlaywrightCM()  # type: ignore[attr-defined]
+    fake_pw_pkg.async_api = fake_pw_async  # type: ignore[attr-defined]
+
+    monkeypatch.setitem(sys.modules, "playwright", fake_pw_pkg)
+    monkeypatch.setitem(sys.modules, "playwright.async_api", fake_pw_async)
+
+    rule = _make_api5_rule()
+    l3_ok = ProbeResult(
+        status="passed",
+        latency_ms=50.0,
+        reason="ok",
+        evidence={"first_episode_url": "https://xpath-anime.test/play/101-1"},
+    )
+    res = await probe_l4_playable(rule, l3_ok, deep=True, timeout_ms=3000)
+
+    assert res.status == "passed"
+    assert res.evidence["stream_type"] == "m3u8"
+    assert res.evidence["stream_host"] == "cdn.mock.test"
+    assert len(continued_urls) == 1
+    assert "dplayer.php" in continued_urls[0]
+    assert aborted_urls == ["https://cdn.mock.test/hls/ep1/index.m3u8?sign=xyz"]
+
 

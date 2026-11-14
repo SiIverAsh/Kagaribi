@@ -11,6 +11,7 @@ from dataclasses import dataclass
 from functools import lru_cache
 from typing import Any, Callable, Literal
 from urllib.parse import parse_qsl, quote, urlencode, urljoin, urlsplit, urlunsplit
+from weakref import WeakKeyDictionary
 
 import httpx
 import lxml.etree as ET
@@ -37,7 +38,34 @@ PARKED_DOMAIN_RE = re.compile(
 )
 PARKED_MAX_BYTES = 2048
 
-MEDIA_STREAM_RE = re.compile(r"\.(?:m3u8|mp4)(?:\?|#|$)", re.IGNORECASE)
+MEDIA_PATH_RE = re.compile(r"\.(?:m3u8|mp4)$", re.IGNORECASE)
+_L4_BROWSER_SEMS: WeakKeyDictionary[asyncio.AbstractEventLoop, asyncio.Semaphore] = (
+    WeakKeyDictionary()
+)
+
+
+def _get_l4_semaphore() -> asyncio.Semaphore:
+    loop = asyncio.get_running_loop()
+    sem = _L4_BROWSER_SEMS.get(loop)
+    if sem is None:
+        sem = asyncio.Semaphore(2)
+        _L4_BROWSER_SEMS[loop] = sem
+    return sem
+
+
+async def _launch_headless_chromium(pw: Any) -> Any:
+    """Launch Playwright bundled Chromium, falling back to system Chrome/Edge if needed."""
+    last_exc: Exception | None = None
+    for channel in (None, "chrome", "msedge"):
+        kwargs: dict[str, Any] = {"headless": True}
+        if channel is not None:
+            kwargs["channel"] = channel
+        try:
+            return await pw.chromium.launch(**kwargs)
+        except Exception as exc:
+            last_exc = exc
+    assert last_exc is not None
+    raise last_exc
 
 
 class ProbeResult(BaseModel):
@@ -944,7 +972,7 @@ async def probe_l4_playable(
     l3: ProbeResult,
     *,
     deep: bool = False,
-    timeout_ms: int = 12000,
+    timeout_ms: int = 18000,
 ) -> ProbeResult:
     """L4 playable (optional --deep): intercept network requests for m3u8/mp4 without downloading media."""
     if not deep:
@@ -972,49 +1000,71 @@ async def probe_l4_playable(
     stream_found = asyncio.Event()
     ua = rule.userAgent.strip() if rule.userAgent and rule.userAgent.strip() else DEFAULT_USER_AGENT
 
-    try:
-        async with async_playwright() as pw:
-            browser = await pw.chromium.launch(headless=True)
-            try:
-                context = await browser.new_context(user_agent=ua, ignore_https_errors=True)
-                page = await context.new_page()
-
-                async def _handle_route(route: Any) -> None:
-                    req_url = route.request.url
-                    if MEDIA_STREAM_RE.search(req_url):
-                        captured_streams.append(req_url)
-                        stream_found.set()
-                        await route.abort()
-                    else:
-                        await route.continue_()
-
-                await page.route("**/*", _handle_route)
-                goto_task = asyncio.create_task(
-                    page.goto(episode_url, wait_until="domcontentloaded", timeout=timeout_ms)
-                )
+    async with _get_l4_semaphore():
+        try:
+            async with async_playwright() as pw:
+                browser = await _launch_headless_chromium(pw)
                 try:
-                    await asyncio.wait_for(stream_found.wait(), timeout=timeout_ms / 1000)
-                except TimeoutError:
-                    pass
+                    context = await browser.new_context(user_agent=ua, ignore_https_errors=True)
+                    page = await context.new_page()
+
+                    async def _handle_route(route: Any) -> None:
+                        req = route.request
+                        req_url = req.url
+                        parsed = urlsplit(req_url)
+                        is_http = parsed.scheme in ("http", "https")
+                        is_stream = is_http and (
+                            bool(MEDIA_PATH_RE.search(parsed.path))
+                            or getattr(req, "resource_type", "") == "media"
+                        )
+                        if is_stream:
+                            captured_streams.append(req_url)
+                            stream_found.set()
+                            await route.abort()
+                        else:
+                            await route.continue_()
+
+                    await page.route("**/*", _handle_route)
+                    goto_task = asyncio.create_task(
+                        page.goto(episode_url, wait_until="domcontentloaded", timeout=timeout_ms)
+                    )
+                    try:
+                        await asyncio.wait_for(stream_found.wait(), timeout=timeout_ms / 1000)
+                    except TimeoutError:
+                        pass
+                    finally:
+                        if not goto_task.done():
+                            goto_task.cancel()
+                        await asyncio.gather(goto_task, return_exceptions=True)
                 finally:
-                    if not goto_task.done():
-                        goto_task.cancel()
-                    await asyncio.gather(goto_task, return_exceptions=True)
-            finally:
-                await browser.close()
-    except Exception as exc:
-        latency = round((time.perf_counter() - t0) * 1000, 1)
-        return ProbeResult(
-            status="failed",
-            latency_ms=latency,
-            reason="browser_error",
-            evidence={"episode_url": episode_url, "error": str(exc)[:200]},
-        )
+                    await browser.close()
+        except Exception as exc:
+            latency = round((time.perf_counter() - t0) * 1000, 1)
+            err_text = str(exc)
+            if "Executable doesn't exist" in err_text or "is not found" in err_text:
+                return ProbeResult(
+                    status="skipped",
+                    latency_ms=latency,
+                    reason="playwright_browser_missing",
+                    evidence={"episode_url": episode_url},
+                )
+            return ProbeResult(
+                status="failed",
+                latency_ms=latency,
+                reason="browser_error",
+                evidence={"episode_url": episode_url, "error": err_text[:200]},
+            )
 
     latency = round((time.perf_counter() - t0) * 1000, 1)
     if captured_streams:
         first_stream = captured_streams[0]
-        stream_ext = "m3u8" if ".m3u8" in first_stream.lower() else "mp4"
+        lower_path = urlsplit(first_stream).path.lower()
+        if lower_path.endswith(".m3u8"):
+            stream_ext = "m3u8"
+        elif lower_path.endswith(".mp4"):
+            stream_ext = "mp4"
+        else:
+            stream_ext = "media"
         return ProbeResult(
             status="passed",
             latency_ms=latency,

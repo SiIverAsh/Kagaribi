@@ -179,6 +179,7 @@ async def run_probes(
         return [], 0.0
 
     idx_lookup = index_map or {}
+    effective_timeout_s = max(timeout_s, 45.0) if deep else timeout_s
     worker_sem = asyncio.Semaphore(max(1, concurrency))
     limiter = RequestLimiter(
         per_host_limit=max(1, per_host_concurrency),
@@ -197,7 +198,7 @@ async def run_probes(
                     active_client,
                     worker_sem=worker_sem,
                     limiter=limiter,
-                    timeout_s=timeout_s,
+                    timeout_s=effective_timeout_s,
                     retries=retries,
                     keywords=keywords,
                     deep=deep,
