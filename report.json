@@ -1,0 +1,4345 @@
+{
+  "generated_at": "2026-11-28T15:02:41Z",
+  "rules_source": "/tmp/kazumi-rules",
+  "deep": false,
+  "elapsed_s": 44.65,
+  "summary": {
+    "total": 86,
+    "active_total": 18,
+    "healthy": 17,
+    "degraded": 18,
+    "dead": 51,
+    "active_healthy": 11,
+    "active_degraded": 2,
+    "active_dead": 5,
+    "parked_domains": 0,
+    "anti_crawler_skipped": 3,
+    "l1_passed": 34,
+    "l2_passed": 20,
+    "l3_passed": 17,
+    "l4_passed": 0
+  },
+  "sources": [
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 905.3,
+      "name": "giriGiriLove",
+      "api": "9",
+      "version": "2.7",
+      "base_url": "https://ani.girigirilove.com",
+      "search_mode": "api",
+      "chapter_mode": "api",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 302.3,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://ani.girigirilove.com",
+          "content_bytes": 5900
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 428.5,
+        "reason": "ok",
+        "evidence": {
+          "mode": "api",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 1,
+          "first_name": "海贼王女",
+          "detail_url": "https://m3u8.girigirilove.com/api.php/Vod/get_detail"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 174.5,
+        "reason": "ok",
+        "evidence": {
+          "mode": "api",
+          "detail_url": "https://m3u8.girigirilove.com/api.php/Vod/get_detail",
+          "road_count": 1,
+          "episode_count": 12,
+          "first_episode_url": "https://pl.girigirilove.com/addons/aplyer/atom.php?key=0&url=https%3A%2F%2Fana.girigirilove.com%2Fzijian%2Foldanime%2F2002%2F04%2FFenaPiratePrincess%2F01.mp4"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 1139.1,
+      "name": "moonci",
+      "api": "9",
+      "version": "1.1",
+      "base_url": "https://www.moonci.com/",
+      "search_mode": "api",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 462.7,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.moonci.com/",
+          "content_bytes": 87467
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 313.2,
+        "reason": "ok",
+        "evidence": {
+          "mode": "api",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 1,
+          "first_name": "海贼王女",
+          "detail_url": "https://www.moonci.com/anime/2790.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 363.2,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://www.moonci.com/anime/2790.html",
+          "road_count": 1,
+          "episode_count": 12,
+          "first_episode_url": "https://www.moonci.com/anime/2790/play/1-1.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 1257.2,
+      "name": "MXdm",
+      "api": "5",
+      "version": "2.4",
+      "base_url": "https://www.dcc3.com",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 414.6,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.dcc3.com",
+          "content_bytes": 34977
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 468.1,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 12,
+          "first_name": "海贼王",
+          "detail_url": "https://www.dcc3.com/detail/1180/"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 374.5,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://www.dcc3.com/detail/1180/",
+          "road_count": 4,
+          "episode_count": 4721,
+          "first_episode_url": "https://www.dcc3.com/play/1180-1-1/"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 1439.8,
+      "name": "ezdmw",
+      "api": "8",
+      "version": "1.2",
+      "base_url": "https://m.ezdmw.org/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 781.2,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://m.ezdmw.org/",
+          "content_bytes": 117166
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 342.8,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 4,
+          "first_name": "海贼王剧场版 STAMPEDE",
+          "detail_url": "https://m.ezdmw.org/Index/bangumi/56038.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 315.8,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://m.ezdmw.org/Index/bangumi/56038.html",
+          "road_count": 3,
+          "episode_count": 3,
+          "first_episode_url": "https://m.ezdmw.org/Index/video/56041.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 1523.4,
+      "name": "LMM",
+      "api": "9",
+      "version": "2.4",
+      "base_url": "https://www.lmm22.com/",
+      "search_mode": "api",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 782.8,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.lmm22.com/",
+          "content_bytes": 109658
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 421.8,
+        "reason": "ok",
+        "evidence": {
+          "mode": "api",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 20,
+          "first_name": "海贼王：女英雄们的故事",
+          "detail_url": "https://www.lmm22.com/index.php/vod/detail/id/8159.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 318.8,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://www.lmm22.com/index.php/vod/detail/id/8159.html",
+          "road_count": 1,
+          "episode_count": 1,
+          "first_episode_url": "https://www.lmm22.com/play/8159_1_1.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 1766.9,
+      "name": "akianime",
+      "api": "4",
+      "version": "1.4",
+      "base_url": "https://www.akianime.cc/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 684.2,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.akianime.cc/",
+          "content_bytes": 105713
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 412.5,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 10,
+          "first_name": "海贼王",
+          "detail_url": "https://www.akianime.cc/bgmplay/IDDDDE-1-1.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 670.2,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://www.akianime.cc/bgmplay/IDDDDE-1-1.html",
+          "road_count": 2,
+          "episode_count": 2360,
+          "first_episode_url": "https://www.akianime.cc/bgmplay/IDDDDE-3-1.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 1866.0,
+      "name": "DM84",
+      "api": "5",
+      "version": "1.4",
+      "base_url": "https://dmbus.cc/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 1093.2,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://dmbus.cc/",
+          "content_bytes": 40007
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 332.8,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 5,
+          "first_name": "海贼王",
+          "detail_url": "https://dmbus.cc/v/71.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 440.0,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://dmbus.cc/v/71.html",
+          "road_count": 2,
+          "episode_count": 2360,
+          "first_episode_url": "https://dmbus.cc/p/71-1-1180.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 1883.4,
+      "name": "7sefun",
+      "api": "4",
+      "version": "1.3",
+      "base_url": "https://www.7sefun.top/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 974.6,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.7sefun.top/",
+          "content_bytes": 36228
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 344.1,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 12,
+          "first_name": "海贼王剧场版7：机关城的机械巨兵",
+          "detail_url": "https://www.7sefun.top/voddetail/34543.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 564.7,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://www.7sefun.top/voddetail/34543.html",
+          "road_count": 1,
+          "episode_count": 1,
+          "first_episode_url": "https://www.7sefun.top/vodplay/34543-1-1.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 2113.4,
+      "name": "aafun",
+      "api": "4",
+      "version": "1.2",
+      "base_url": "https://www.moonci.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 1599.5,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.moonci.com/",
+          "content_bytes": 87467
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 264.0,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 1,
+          "first_name": "海贼王女 查看详情",
+          "detail_url": "https://www.moonci.com/anime/2790.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 249.9,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://www.moonci.com/anime/2790.html",
+          "road_count": 1,
+          "episode_count": 12,
+          "first_episode_url": "https://www.moonci.com/anime/2790/play/1-1.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 2218.3,
+      "name": "sorani",
+      "api": "8",
+      "version": "1.0",
+      "base_url": "https://www.sorani.net/",
+      "search_mode": "api",
+      "chapter_mode": "api",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 1026.3,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.sorani.net/",
+          "content_bytes": 695376
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 888.5,
+        "reason": "ok",
+        "evidence": {
+          "mode": "api",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 19,
+          "first_name": "海贼王谈恋爱",
+          "detail_url": "https://api.sorani.cc/sorani-cms/api/video/58"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 303.5,
+        "reason": "ok",
+        "evidence": {
+          "mode": "api",
+          "detail_url": "https://api.sorani.cc/sorani-cms/api/video/58",
+          "road_count": 1,
+          "episode_count": 5,
+          "first_episode_url": "https://www.sorani.net/anime/mal/58/episode/1.0"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 2420.2,
+      "name": "xfdmnext",
+      "api": "8",
+      "version": "1.1",
+      "base_url": "https://next.xifanacg.com/",
+      "search_mode": "api",
+      "chapter_mode": "api",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 537.8,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://next.xifanacg.com/",
+          "content_bytes": 508084
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 748.2,
+        "reason": "ok",
+        "evidence": {
+          "mode": "api",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 3,
+          "first_name": "航海王",
+          "detail_url": "https://api.xifanacg.com/rest/v1/rpc/get_anime_detail"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 1134.2,
+        "reason": "ok",
+        "evidence": {
+          "mode": "api",
+          "detail_url": "https://api.xifanacg.com/rest/v1/rpc/get_anime_detail",
+          "road_count": 1,
+          "episode_count": 1113,
+          "first_episode_url": "https://next.xifanacg.com/anime/1020/play/14617"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 622.8,
+      "name": "yishijie",
+      "api": "4",
+      "version": "1.1",
+      "base_url": "https://www.dmmiku.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 190.6,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.dmmiku.com/",
+          "content_bytes": 76528
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 104.8,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 5,
+          "first_name": "新番海贼王",
+          "detail_url": "https://www.dmmiku.com/index.php/vod/detail/id/1293.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 327.4,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://www.dmmiku.com/index.php/vod/detail/id/1293.html",
+          "road_count": 1,
+          "episode_count": 1018,
+          "first_episode_url": "https://www.dmmiku.com/index.php/vod/play/id/1293/sid/1/nid/1.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 687.5,
+      "name": "omofun",
+      "api": "5",
+      "version": "1.0.1",
+      "base_url": "https://omofun.in/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 229.3,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://omofun.in/",
+          "content_bytes": 49944
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 206.4,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 24,
+          "first_name": "海贼王谈恋爱",
+          "detail_url": "https://omofun.in/vod/detail/2025314279.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 251.8,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://omofun.in/vod/detail/2025314279.html",
+          "road_count": 1,
+          "episode_count": 5,
+          "first_episode_url": "https://omofun.in/vod/play/2025314279/ep1.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 1047.9,
+      "name": "FQDM",
+      "api": "7",
+      "version": "2.0",
+      "base_url": "https://www.fqdm.cc/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 402.0,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.fqdm.cc/",
+          "content_bytes": 76485
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 432.0,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 16,
+          "first_name": "乐高航海王",
+          "detail_url": "https://www.fqdm.cc/index.php/vod/detail/id/13407.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 213.9,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://www.fqdm.cc/index.php/vod/detail/id/13407.html",
+          "road_count": 4,
+          "episode_count": 8,
+          "first_episode_url": "https://www.fqdm.cc/index.php/vod/play/id/13407/sid/2/nid/1.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 1082.6,
+      "name": "Fantuan",
+      "api": "5",
+      "version": "2.0",
+      "base_url": "https://acgpost.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 548.5,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://acgpost.com/",
+          "content_bytes": 104169
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 297.0,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 18,
+          "first_name": "乐高航海王",
+          "detail_url": "https://acgpost.com/anime/12842.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 237.1,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://acgpost.com/anime/12842.html",
+          "road_count": 2,
+          "episode_count": 4,
+          "first_episode_url": "https://acgpost.com/play/12842-1-1.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 1459.4,
+      "name": "WYDM",
+      "api": "4",
+      "version": "1.2",
+      "base_url": "https://www.vdm5.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 756.6,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.vdm5.com/",
+          "content_bytes": 87169
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 393.8,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 10,
+          "first_name": "乐高航海王",
+          "detail_url": "https://www.vdm5.com/vodetail_legaohanghaiwang.html"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 309.0,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://www.vdm5.com/vodetail_legaohanghaiwang.html",
+          "road_count": 1,
+          "episode_count": 2,
+          "first_episode_url": "https://www.vdm5.com/dmplay_legaohanghaiwang-1-1.html"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟢",
+      "health": "healthy",
+      "total_latency_ms": 3339.6,
+      "name": "fcdm",
+      "api": "6",
+      "version": "1.0",
+      "base_url": "https://fcdm.org.cn/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 1229.5,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://fcdm.org.cn/",
+          "content_bytes": 34757
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 920.3,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 21,
+          "first_name": "海贼王 海贼王，女英雄们的故事 海贼王特别篇 Romance Dawn 海贼王谈恋爱 海贼王剧场版9：冬季绽放的奇迹之樱 海贼王剧场版01：黄金岛冒险（日语版） 海贼王 萨博篇 三兄弟的羁绊 奇迹的再会和被继承的意志 海贼王特别篇：黄金之心 航海王：红发歌姬 海贼王梅利篇：另一名同伴的故事 海贼王SP：路飞落下 秘境 海肚脐的大冒险 海贼王剧场版Z 航海王 航海王：狂热行动 (普通话) 海贼王剧场版8：沙漠公主与海盗们 海贼王剧场版3：珍兽岛的乔巴王国 海贼王电影版：追寻草帽 海贼王剧场版7：机关城的机械巨兵 海贼王 东海特别篇 路飞与四位伙伴的大冒险！！ 海贼王路飞篇：手掌岛的冒险 海贼王剧场版5：被诅咒的圣剑",
+          "detail_url": "https://fcdm.org.cn/p/40176/"
+        }
+      },
+      "l3": {
+        "status": "passed",
+        "latency_ms": 1189.8,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://fcdm.org.cn/p/40176/",
+          "road_count": 4,
+          "episode_count": 3768,
+          "first_episode_url": "https://fcdm.org.cn/v/40176-1-1/"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1218.5,
+      "name": "baimao",
+      "api": "5",
+      "version": "1.0",
+      "base_url": "https://www.baimaodm.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 741.0,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.bmddm.com/",
+          "content_bytes": 72917
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 246.5,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 24,
+          "first_name": "海贼王子",
+          "detail_url": "https://www.baimaodm.com/show/145691.html"
+        }
+      },
+      "l3": {
+        "status": "failed",
+        "latency_ms": 231.0,
+        "reason": "no_episodes",
+        "evidence": {
+          "mode": "xpath",
+          "detail_url": "https://www.baimaodm.com/show/145691.html",
+          "matched_roads": 1
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1637.6,
+      "name": "xigua",
+      "api": "3",
+      "version": "1.0",
+      "base_url": "https://cn.xgcartoon.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 353.2,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://cn.xgcartoon.com/",
+          "content_bytes": 236879
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 351.3,
+        "reason": "ok",
+        "evidence": {
+          "mode": "xpath",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 100,
+          "first_name": "航海王（海贼王）【日语】",
+          "detail_url": "https://cn.xgcartoon.com/detail/haizeiwangriyu-weitianrongyilang"
+        }
+      },
+      "l3": {
+        "status": "failed",
+        "latency_ms": 933.1,
+        "reason": "no_chapter_roads",
+        "evidence": {
+          "detail_url": "https://cn.xgcartoon.com/detail/haizeiwangriyu-weitianrongyilang"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 2731.6,
+      "name": "milimili",
+      "api": "8",
+      "version": "1.0",
+      "base_url": "https://milimili.moe",
+      "search_mode": "api",
+      "chapter_mode": "api",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 2203.6,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://milimili.moe",
+          "content_bytes": 230236
+        }
+      },
+      "l2": {
+        "status": "passed",
+        "latency_ms": 306.0,
+        "reason": "ok",
+        "evidence": {
+          "mode": "api",
+          "keyword": "海贼王",
+          "tried_keywords": [
+            "海贼王"
+          ],
+          "result_count": 8,
+          "first_name": "海贼王女",
+          "detail_url": "https://milimili.moe/milimili.platform.v1.PlatformService/GetBangumi"
+        }
+      },
+      "l3": {
+        "status": "failed",
+        "latency_ms": 222.0,
+        "reason": "no_episodes",
+        "evidence": {
+          "mode": "api",
+          "detail_url": "https://milimili.moe/milimili.platform.v1.PlatformService/GetBangumi"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1466.1,
+      "name": "mutefun",
+      "api": "9",
+      "version": "1.6",
+      "base_url": "https://www.mutedm.com",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": true,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 1466.1,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.mutedm.com",
+          "content_bytes": 129316
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "anti_crawler",
+        "evidence": {
+          "anti_crawler_enabled": true
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1296.3,
+      "name": "xfdm",
+      "api": "6",
+      "version": "2.1",
+      "base_url": "https://anime.xifanacg.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": true,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 1296.3,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://next.xifanacg.com/",
+          "content_bytes": 508084
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "anti_crawler",
+        "evidence": {
+          "anti_crawler_enabled": true
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 869.4,
+      "name": "pekolove",
+      "api": "2",
+      "version": "1.0",
+      "base_url": "https://acg.pekolove.net/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 366.2,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://acg.pekolove.net/",
+          "content_bytes": 1126
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 503.2,
+        "reason": "empty_search_results",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "empty_search_results",
+            "empty_search_results",
+            "empty_search_results"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 932.8,
+      "name": "gugu3",
+      "api": "5",
+      "version": "1.3",
+      "base_url": "https://www.gugu3.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 439.9,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.gugu3.com/",
+          "content_bytes": 14644
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 492.9,
+        "reason": "http_404",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "http_404",
+            "http_404",
+            "http_404"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1083.4,
+      "name": "IF",
+      "api": "1",
+      "version": "1.0",
+      "base_url": "https://www.lffun.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 504.4,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.lffun.com/",
+          "content_bytes": 475
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 579.0,
+        "reason": "empty_search_results",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "empty_search_results",
+            "empty_search_results",
+            "empty_search_results"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1112.1,
+      "name": "bobodm",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "http://www.bobodm.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 496.9,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "http://www.bobodm.com/",
+          "content_bytes": 1579
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 615.2,
+        "reason": "empty_search_results",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "empty_search_results",
+            "empty_search_results",
+            "empty_search_results"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1653.1,
+      "name": "libvio",
+      "api": "4",
+      "version": "0.4",
+      "base_url": "https://www.libvio.cc/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 629.2,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.libvio.cc/",
+          "content_bytes": 12477
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 1023.9,
+        "reason": "http_404",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "http_404",
+            "http_404",
+            "http_404"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1726.8,
+      "name": "moefan",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "https://www.moefan.cc/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 1420.0,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.moefan.cc/",
+          "content_bytes": 475
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 306.8,
+        "reason": "empty_search_results",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "empty_search_results",
+            "empty_search_results",
+            "empty_search_results"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1809.4,
+      "name": "HZDM",
+      "api": "1",
+      "version": "1.0",
+      "base_url": "https://www.huazidm.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 769.5,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.huazidm.com/",
+          "content_bytes": 2355
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 1039.9,
+        "reason": "http_404",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "http_404",
+            "http_404",
+            "http_404"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1950.1,
+      "name": "clicli",
+      "api": "3",
+      "version": "0.5",
+      "base_url": "https://www.clicli.pro",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 1311.0,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://getvault.spassvault.com/?clickid=91241651579&cid=9868&tag=dm&dkw=clicli.pro&pid=185689&yid=2fpr&cachecode=Wm7i8AJcziJzIPLTCS%2BiQA%3D%3D&rhi=003b1bb6-9813-4ee6-ad28-2f63806b9b14",
+          "content_bytes": 26239
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 639.1,
+        "reason": "empty_search_results",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "empty_search_results",
+            "empty_search_results",
+            "empty_search_results"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 3021.5,
+      "name": "BF",
+      "api": "1",
+      "version": "1.1",
+      "base_url": "https://bilfun.cc/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 1275.4,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://bilfun.cc/",
+          "content_bytes": 77414
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 1746.1,
+        "reason": "http_404",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "http_404",
+            "http_404",
+            "http_404"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 3448.3,
+      "name": "mitang",
+      "api": "1",
+      "version": "0.0.2",
+      "base_url": "https://www.mitang.tv",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 2813.4,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.mitang.tv",
+          "content_bytes": 475
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 634.9,
+        "reason": "empty_search_results",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "empty_search_results",
+            "empty_search_results",
+            "empty_search_results"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 6611.7,
+      "name": "MT",
+      "api": "1",
+      "version": "1.0",
+      "base_url": "https://www.mutean.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 3959.2,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "https://www.mutefun.tv/",
+          "content_bytes": 142193
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 2652.5,
+        "reason": "empty_search_results",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "empty_search_results",
+            "empty_search_results",
+            "empty_search_results"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 8916.2,
+      "name": "yinghua",
+      "api": "4",
+      "version": "1.2",
+      "base_url": "http://www.iyinghua.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "passed",
+        "latency_ms": 7828.3,
+        "reason": "ok",
+        "evidence": {
+          "status_code": 200,
+          "url": "http://www.iyinghua.com/",
+          "content_bytes": 849
+        }
+      },
+      "l2": {
+        "status": "failed",
+        "latency_ms": 1087.9,
+        "reason": "http_404",
+        "evidence": {
+          "mode": "xpath",
+          "tried_keywords": [
+            "海贼王",
+            "EVA",
+            "火影忍者"
+          ],
+          "reasons": [
+            "http_404",
+            "http_404",
+            "http_404"
+          ]
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🟡",
+      "health": "degraded",
+      "total_latency_ms": 1091.2,
+      "name": "ciyuancheng",
+      "api": "6",
+      "version": "2.0",
+      "base_url": "https://www.cycani.org/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": true,
+      "attempts": 1,
+      "l1": {
+        "status": "skipped",
+        "latency_ms": 1091.2,
+        "reason": "anti_crawler",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://www.cycani.org/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 178.8,
+      "name": "qifun",
+      "api": "7",
+      "version": "2.1",
+      "base_url": "https://www.qifun.cc/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": true,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 178.8,
+        "reason": "tls_error",
+        "evidence": {
+          "url": "https://www.qifun.cc/",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 884.9,
+      "name": "aowu",
+      "api": "6",
+      "version": "2.0",
+      "base_url": "https://www.aowu.tv/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": true,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 884.9,
+        "reason": "dns_error",
+        "evidence": {
+          "url": "https://www.aowu.tv/",
+          "error": "[Errno -2] Name or service not known"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 273.2,
+      "name": "dalvdm",
+      "api": "9",
+      "version": "1.2",
+      "base_url": "https://www.sbdl.cc/",
+      "search_mode": "api",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 273.2,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://www.sbdl.cc/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 405.8,
+      "name": "AGE",
+      "api": "5",
+      "version": "1.6",
+      "base_url": "https://www.agedm.io/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 405.8,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://www.agedm.io/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 486.1,
+      "name": "xfdmneo",
+      "api": "6",
+      "version": "1.1",
+      "base_url": "https://dm1.xfdm.pro/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 486.1,
+        "reason": "http_500",
+        "evidence": {
+          "status_code": 500,
+          "url": "https://dm1.xfdm.pro/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 1130.5,
+      "name": "TvTFun",
+      "api": "9",
+      "version": "1.3",
+      "base_url": "https://www.tvtfun.net",
+      "search_mode": "api",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 1130.5,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://www.tvtfun.net"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 1387.4,
+      "name": "mgnacg",
+      "api": "9",
+      "version": "1.2",
+      "base_url": "https://www.mgnacg.com/media/",
+      "search_mode": "api",
+      "chapter_mode": "xpath",
+      "deprecated": false,
+      "listed_in_index": true,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 1387.4,
+        "reason": "http_404",
+        "evidence": {
+          "status_code": 404,
+          "url": "https://www.mgnacg.com/media/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 81.8,
+      "name": "qdm",
+      "api": "4",
+      "version": "1.3",
+      "base_url": "https://www.qdm8.cc/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 81.8,
+        "reason": "connect_error",
+        "evidence": {
+          "url": "https://www.qdm8.cc/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 87.0,
+      "name": "295yhw",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "https://www.295yhw.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 87.0,
+        "reason": "connect_error",
+        "evidence": {
+          "url": "https://www.295yhw.com/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 92.0,
+      "name": "ant",
+      "api": "1",
+      "version": "0.0.2",
+      "base_url": "https://www.mayi520.org/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 92.0,
+        "reason": "connect_error",
+        "evidence": {
+          "url": "https://www.mayi520.org/",
+          "error": "All connection attempts failed"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 137.5,
+      "name": "1ANI",
+      "api": "1",
+      "version": "1.4",
+      "base_url": "https://anime.d1dm.xyz/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 137.5,
+        "reason": "dns_error",
+        "evidence": {
+          "url": "https://anime.d1dm.xyz/",
+          "error": "[Errno -5] No address associated with hostname"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 141.6,
+      "name": "kimani",
+      "api": "1",
+      "version": "0.0.1",
+      "base_url": "https://kimani22.com",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 141.6,
+        "reason": "dns_error",
+        "evidence": {
+          "url": "https://kimani22.com",
+          "error": "[Errno -5] No address associated with hostname"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 149.1,
+      "name": "brovod",
+      "api": "2",
+      "version": "1.1",
+      "base_url": "https://www.brovod.com",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 149.1,
+        "reason": "http_error",
+        "evidence": {
+          "url": "https://www.brovod.com",
+          "error": "<StreamReset stream_id:3, error_code:1, remote_reset:True>"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 164.9,
+      "name": "mwcy",
+      "api": "4",
+      "version": "1.2",
+      "base_url": "https://www.mwcy.net/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 164.9,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://www.mwcy.net/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 188.1,
+      "name": "omofun03",
+      "api": "5",
+      "version": "1.1",
+      "base_url": "https://omofun03.top/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 188.1,
+        "reason": "tls_error",
+        "evidence": {
+          "url": "https://omofun03.top/",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 192.3,
+      "name": "XY",
+      "api": "1",
+      "version": "1.0",
+      "base_url": "https://www.xiyedm.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 192.3,
+        "reason": "tls_error",
+        "evidence": {
+          "url": "https://www.xiyedm.com/",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 195.3,
+      "name": "NT",
+      "api": "1",
+      "version": "1.2",
+      "base_url": "https://www.ntdm8.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 195.3,
+        "reason": "dns_error",
+        "evidence": {
+          "url": "https://www.ntdm8.com/",
+          "error": "[Errno -2] Name or service not known"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 200.8,
+      "name": "nyafun",
+      "api": "3",
+      "version": "0.0.3",
+      "base_url": "https://www.nyadm.net/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 200.8,
+        "reason": "tls_error",
+        "evidence": {
+          "url": "https://www.nyadm.net/",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 201.9,
+      "name": "eacg",
+      "api": "1",
+      "version": "0.0.1",
+      "base_url": "https://eacg1.com",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 201.9,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://eacg1.com"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 213.1,
+      "name": "mitaodm",
+      "api": "1",
+      "version": "1.0",
+      "base_url": "https://www.mitaodm.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 213.1,
+        "reason": "connect_error",
+        "evidence": {
+          "url": "https://www.mitaodm.com/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 223.2,
+      "name": "nekodm",
+      "api": "2",
+      "version": "1.2",
+      "base_url": "https://nekodm.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 223.2,
+        "reason": "tls_error",
+        "evidence": {
+          "url": "https://nekodm.com/",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 233.1,
+      "name": "mcy",
+      "api": "2",
+      "version": "1.0",
+      "base_url": "https://www.mcydh.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 233.1,
+        "reason": "tls_error",
+        "evidence": {
+          "url": "https://www.mcydh.com/",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 237.5,
+      "name": "k8dm",
+      "api": "4",
+      "version": "0.1",
+      "base_url": "https://k8dm.com",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 237.5,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://k8dm.com"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 243.0,
+      "name": "qimi",
+      "api": "4",
+      "version": "1.2",
+      "base_url": "https://www.qimiqimi.net/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 243.0,
+        "reason": "tls_error",
+        "evidence": {
+          "url": "https://www.qimiqimi.net/",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 248.7,
+      "name": "ziyedm",
+      "api": "1",
+      "version": "1.2",
+      "base_url": "https://www.ziyedm.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 248.7,
+        "reason": "tls_error",
+        "evidence": {
+          "url": "https://www.ziyedm.com/",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 258.7,
+      "name": "anime7",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "https://anime7.top/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 258.7,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://anime7.top/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 275.5,
+      "name": "qkan9",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "https://www.qkan9.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 275.5,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://www.qkan9.com/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 287.3,
+      "name": "jzsdm",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "https://www.jzsdm1.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 287.3,
+        "reason": "tls_error",
+        "evidence": {
+          "url": "https://www.jzsdm1.com/",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 292.4,
+      "name": "xiaobao",
+      "api": "1",
+      "version": "0.0.1",
+      "base_url": "https://www.xiaobaotv.app",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 292.4,
+        "reason": "connect_error",
+        "evidence": {
+          "url": "https://www.xiaobaotv.app",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 313.2,
+      "name": "233dm",
+      "api": "2",
+      "version": "1.0",
+      "base_url": "https://www.233dm.cc",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 313.2,
+        "reason": "connect_error",
+        "evidence": {
+          "url": "https://www.233dm.cc",
+          "error": "All connection attempts failed"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 355.3,
+      "name": "80tv",
+      "api": "1",
+      "version": "1.0",
+      "base_url": "https://www.80s-tv.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 355.3,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://el607.top/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 384.7,
+      "name": "mifun",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "https://mifun.tw/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 384.7,
+        "reason": "connect_error",
+        "evidence": {
+          "url": "https://mifun.tw/",
+          "error": "All connection attempts failed"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 444.0,
+      "name": "cyfz",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "https://www.cyfz.vip/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 444.0,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://www.cyfz.vip/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 593.3,
+      "name": "xiapidm",
+      "api": "1",
+      "version": "1.0",
+      "base_url": "https://xiapidm.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 593.3,
+        "reason": "tls_error",
+        "evidence": {
+          "url": "https://xiapidm.com/",
+          "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'xiapidm.com'. (_ssl.c:1011)"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 635.2,
+      "name": "dmghg",
+      "api": "7",
+      "version": "1.0",
+      "base_url": "https://www.dmghg1.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 635.2,
+        "reason": "http_456",
+        "evidence": {
+          "status_code": 456,
+          "url": "https://www.dmghg1.com/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 780.1,
+      "name": "gpjda",
+      "api": "5",
+      "version": "1.0",
+      "base_url": "https://www.gpjda.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 780.1,
+        "reason": "http_error",
+        "evidence": {
+          "url": "https://www.gpjda.com/",
+          "error": "Server disconnected without sending a response."
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 847.0,
+      "name": "mengfan",
+      "api": "1",
+      "version": "1.2",
+      "base_url": "https://www.mfan.tv/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 847.0,
+        "reason": "http_401",
+        "evidence": {
+          "status_code": 401,
+          "url": "http://ww547.mfan.tv/?tkn=19vnMT3S"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 987.9,
+      "name": "hfkzm",
+      "api": "5",
+      "version": "1.1",
+      "base_url": "https://hfkzm.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 987.9,
+        "reason": "http_error",
+        "evidence": {
+          "url": "https://hfkzm.com/",
+          "error": "Server disconnected without sending a response."
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 1013.3,
+      "name": "AnFuns",
+      "api": "1",
+      "version": "0.1",
+      "base_url": "https://www.anfuns.org/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 1013.3,
+        "reason": "http_401",
+        "evidence": {
+          "status_code": 401,
+          "url": "http://ww547.anfuns.org/?tkn=19vnMT3S"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 1188.6,
+      "name": "skr",
+      "api": "4",
+      "version": "0.5",
+      "base_url": "https://skr.skr1.cc:666/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 1188.6,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://skr.skr1.cc:666/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 1585.7,
+      "name": "9ciyuan",
+      "api": "1",
+      "version": "1.3",
+      "base_url": "https://www.jcydm1.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 1,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 1585.7,
+        "reason": "http_403",
+        "evidence": {
+          "status_code": 403,
+          "url": "https://www.jcydm1.com/"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 1760.2,
+      "name": "dmand",
+      "api": "4",
+      "version": "1.1",
+      "base_url": "https://www.88dmw.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 1760.2,
+        "reason": "connect_error",
+        "evidence": {
+          "url": "https://www.88dmw.com/",
+          "error": "All connection attempts failed"
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 6058.0,
+      "name": "enlie",
+      "api": "5",
+      "version": "1.0",
+      "base_url": "https://enlienli.link/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 6058.0,
+        "reason": "timeout",
+        "evidence": {
+          "url": "https://enlienli.link/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 6059.8,
+      "name": "ffdm",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "https://www.ffdm.cc/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 6059.8,
+        "reason": "timeout",
+        "evidence": {
+          "url": "https://www.ffdm.cc/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 6183.4,
+      "name": "zkk79",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "https://www.zkk79.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 6183.4,
+        "reason": "timeout",
+        "evidence": {
+          "url": "https://www.zkk79.com/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 6399.0,
+      "name": "tt776b",
+      "api": "4",
+      "version": "1.0",
+      "base_url": "https://www.tt776b.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 6399.0,
+        "reason": "timeout",
+        "evidence": {
+          "url": "https://www.tt776b.com/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 10127.7,
+      "name": "ylsp",
+      "api": "4",
+      "version": "1.1",
+      "base_url": "https://www.ylys.cc/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 10127.7,
+        "reason": "timeout",
+        "evidence": {
+          "url": "https://www.ylys.cc/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 10146.9,
+      "name": "mandao",
+      "api": "4",
+      "version": "1.3",
+      "base_url": "https://www.mengdao.tv/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 10146.9,
+        "reason": "timeout",
+        "evidence": {
+          "url": "https://www.mengdao.tv/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 10150.4,
+      "name": "dlma",
+      "api": "4",
+      "version": "1.1",
+      "base_url": "https://www.dmla5.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 10150.4,
+        "reason": "timeout",
+        "evidence": {
+          "url": "https://www.dmla5.com/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 10185.2,
+      "name": "omofunz",
+      "api": "2",
+      "version": "1.0",
+      "base_url": "https://omofunz.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 10185.2,
+        "reason": "timeout",
+        "evidence": {
+          "url": "https://omofunz.com/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    },
+    {
+      "badge": "🔴",
+      "health": "dead",
+      "total_latency_ms": 10219.1,
+      "name": "dms",
+      "api": "2",
+      "version": "1.0",
+      "base_url": "https://www.agedms.com/",
+      "search_mode": "xpath",
+      "chapter_mode": "xpath",
+      "deprecated": true,
+      "listed_in_index": false,
+      "anti_crawler": false,
+      "attempts": 2,
+      "l1": {
+        "status": "failed",
+        "latency_ms": 10219.1,
+        "reason": "timeout",
+        "evidence": {
+          "url": "https://www.agedms.com/",
+          "error": ""
+        }
+      },
+      "l2": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L1"
+        }
+      },
+      "l3": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "upstream_failed",
+        "evidence": {
+          "depends_on": "L2"
+        }
+      },
+      "l4": {
+        "status": "skipped",
+        "latency_ms": 0.0,
+        "reason": "deep_disabled",
+        "evidence": {}
+      }
+    }
+  ]
+}
